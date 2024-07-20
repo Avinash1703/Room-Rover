@@ -1,0 +1,610 @@
+body{
+    font-family: 'Plus Jakarta Sans',sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#filters::-webkit-scrollbar {
+    display: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+.container{
+    flex: 1;
+}
+/* Styling for the back-to-top button */
+#back-to-top{
+    position: fixed;
+    bottom: 26px;
+    right: 30px;
+    display: none;
+    font-size: 30px;
+    background-color: #fe424d;
+    color: #fff;
+    border: none;
+    border-radius: 27%;
+    width: 40px;
+    height: 40px;
+    z-index: 20;
+    padding-bottom: 10px;
+    padding-left: 11px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 16px;
+}
+
+@media (max-width: 767px) {
+    #back-to-top {
+        bottom: 34px;
+    }
+}
+/*Navbar*/
+
+.navbar{
+height: 5rem;
+background-color: white ;
+}
+
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link{
+    color: #222222 !important;
+}
+
+.nav-branding{
+    color: #fe424d !important;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Footer  */
+.site-footer {
+    background-color: #ebebeb;
+    padding: 35px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #222222;
+}
+
+.site-footer hr {
+    border-top-color: #f6f4f4;
+    opacity: 0.5
+}
+.footer-text{
+    text-align: justify;
+}
+.footer-part{
+   text-align: center;
+}
+.quick-links{
+   padding-left: 5.75rem;
+}
+.subscribe-btn{
+    background-color: #fe424d;
+    color: #fff !important;
+}
+.subscribe-btn:hover{
+    background-color: #fe424d;
+}
+
+.site-footer hr.small {
+    margin: 20px 0
+}
+
+.site-footer h6 {
+    color: #222222;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 5px;
+    letter-spacing: 2px
+}
+
+.site-footer a {
+    color: #222222;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none
+}
+
+.footer-links li {
+    display: block
+}
+
+.footer-links a {
+    color: #4d4b4b;
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block
+}
+
+.site-footer .social-icons {
+    text-align: right
+}
+
+.site-footer .social-icons a {
+    width: 40px;
+    text-decoration: none;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    color: #fff;
+    background-color: #fe424d;
+}
+
+.copyright-text {
+    margin: 0;
+}
+
+@media (max-width:991px) {
+    .site-footer [class^=col-] {
+        margin-bottom: 30px
+    }
+}
+
+@media (max-width:767px) {
+    .site-footer {
+        padding-bottom: 0
+    }
+
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+        text-align: center
+    }
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+    list-style: none
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px
+}
+
+.social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px
+}
+
+.social-icons a {
+    background-color: #eceeef;
+    color: #a0aab3;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    text-decoration: none;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #92a8b7
+}
+
+.social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px
+}
+
+.social-icons a.facebook:hover {
+    background-color: #3b5998
+}
+
+.social-icons a.twitter:hover {
+    background-color: #bd33a2
+}
+
+.social-icons a.linkedin:hover {
+    background-color: #007bb6
+}
+
+@media (max-width:767px) {
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600
+    }
+}
+
+/*Cards*/
+
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top{
+    border-radius: 1.2rem !important;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-text p{
+    font-weight: 400 ;
+}
+
+.listing-link{
+    text-decoration: none;
+    cursor: default;
+}
+
+/*CARD EFFECT*/
+
+#imgh {
+    height: 20rem;
+    transition: .5s ease-in-out 0s;
+}
+
+
+#imgh:hover {
+    transform: scale(1.05) !important;
+    transition: 0.5s ease-in-out 0s !important;
+}
+
+
+
+.imgHovers {
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Heart Icon */
+.like-button .heart-icon {
+    height: 100px;
+    width: 100px;
+    background: url("../images/image.png");
+    background-position: left;
+    cursor: pointer;
+    position: absolute;
+}
+
+.like-button .heart-icon.liked {
+    animation: like-anim 0.7s steps(28) forwards;
+}
+
+@keyframes like-anim {
+    to {
+        background-position: right;
+    }
+}
+
+.like-button .heart-bg {
+    background: rgba(255, 192, 200, 0);
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 100ms ease;
+}
+
+.like-button .heart-bg:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.like-button {
+    display: flex;
+    align-items: center;
+}
+
+.like-button .likes-amount {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: #888;
+    font-weight: 900;
+    margin-left: 6px;
+}
+
+/*SEARCH RESPONSE */
+
+.searchResponse{
+    height: 5rem;
+    width: 80vw;
+    margin-left: 2rem;
+    display: inline-block;
+    text-align: center;
+}
+.searchResponseText{
+    opacity: 0.7;
+}
+
+/*Overlay effect to the cards whenever we hover cards*/
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+/*New Listing Form */
+
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/*Edit Form*/
+.edit-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* .original-image{
+    height: 15rem;
+    width: 20rem;
+} */
+/* Show Page */
+.show-image{
+    height: 50vh;
+}
+
+.btns{
+    display: flex;
+
+}
+
+.show-card{
+    padding-left:0 ;
+    padding-right: 0;
+}
+
+/*MAP*/
+
+#map{
+    height: 400px;
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid rgba(0,128,0,0.428);
+}
+.rounded-rect {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 50px -25px black;
+}
+
+.flex-center {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center.left {
+    left: 0px;
+}
+
+.flex-center.right {
+    right: 0px;
+}
+
+/* .sidebar-content {
+  position: absolute;
+  width: 95%;
+  height: 15%;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  color: #683193;
+  } */
+.geocoder-dropdown-item {
+    padding: 5px;
+}
+
+.geocoder-dropdown-icon {
+    margin-right: 10px;
+}
+
+.geocoder-dropdown-text {
+    color: #5a3fc0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.mapboxgl-ctrl-geocoder--input {
+    font: inherit;
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    margin: 0;
+    height: 50px;
+    color: #404040;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 6px 45px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.mapboxgl-ctrl-geocoder {
+    position: relative;
+    bottom: 120px;
+    right: 580px;
+
+}
+
+/* .sidebar-toggle {
+  position: absolute;
+  width: 1.3em;
+  height: 1.3em;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+    */
+/* .sidebar-toggle.left {
+  right: -1.5em;
+  }
+   
+  .sidebar-toggle.right {
+  left: -1.5em;
+  }
+   
+  .sidebar-toggle:hover {
+  color: #683193;
+  cursor: pointer;
+  }
+   
+  .sidebar {
+  transition: transform 1s;
+  z-index: 1;
+  width: 300px;
+  height: 100%;
+  } */
+
+/*
+  The sidebar styling has them "expanded" by default, we use CSS transforms to push them offscreen
+  The toggleSidebar() function removes this class from the element in order to expand it.
+  */
+.left.collapsed {
+    transform: translateX(-295px);
+}
+
+.right.collapsed {
+    transform: translateX(295px);
+}
+
+@media (max-width: 767px) {
+    .sidebar-toggle {
+        display: none;
+    }
+}
+
+
+
+/*SEARCH BAR*/
+.search-btn {
+    background-color: #fe424d;
+    color: #fff;
+    border-radius: 25px;
+    padding: 0 1rem 0 1rem;
+}
+
+.search-btn:hover {
+    background-color: #fe424d;
+    color: #fff;
+}
+
+.search-btn i {
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+.search-input {
+    border-radius: 25px;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    font-size: 1rem;
+}
+
+/*FILTERS*/
+
+#filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100px !important;
+    overflow: scroll; 
+}
+
+#filers a{
+    color: black;
+    text-decoration: none;
+}
+
+.filter {
+    text-align: center;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    opacity: 0.7;
+}
+
+.filter:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.filter p {
+    font-size: 0.8rem;
+}
+
+.tax-info {
+    display: none;
+}
+
+.tax-toggle {
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 3.25rem;
+    padding: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    min-width: 250px;
+    margin-top: 0.8rem;
+    width: fit-content;
+    align-items: center;
+}
+
+.filter-link{
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+}
+.filter-link:hover{
+    opacity: 1;
+    scale: 1.05;
+}
+
+.selected-filter {
+    border-bottom: 3px solid #fe424d;
+    /* Adjust the styling as needed */
+}
+
