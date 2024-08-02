@@ -43,7 +43,7 @@
 
     <!-- checking the current logged in user and the listing owner are sameif same enable edit and delete if not disable edit and delete. -->
     <% if(currentUser && currentUser._id.equals(listing.owner._id)) {%>
-        <div class="btns">
+        <div class="btns col-8 offset-2">
             <a href="/listings/<%=listing._id%>/edit" class="btn btn-dark col-1 offset-3 edit-btn">Edit </a>
             <form action="/listings/<%=listing._id%>?_method=DELETE" method="post">
                 <button type="submit" class="btn btn-dark  offset-5">Delete </button>
