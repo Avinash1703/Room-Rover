@@ -19,7 +19,7 @@ module.exports.signup = async(req,res)=>{
             if(err){
                 return next(err);
             }
-            req.flash("success","Welcome to Wanderlust!");
+            req.flash("success","Welcome to RoomRover!");
             res.redirect("/listings");
         });
     }catch(err){
@@ -38,7 +38,7 @@ module.exports.renderLoginForm = (req,res)=>{
 //callback function to login the user into the website. --> POST "/login".
 module.exports.login = async(req,res)=>{
     //res.send("Welcome to Wanderlust! You are logged in!");
-    req.flash("success","Welcome back to Wanderlust!");
+    req.flash("success","Welcome back to RoomRover!");
     let redirectUrl = res.locals.redirectUrl || "/listings";//if res.locals.redirectUrl is not available in the session , then redirect to "/listings".
     res.redirect(redirectUrl);
 };
